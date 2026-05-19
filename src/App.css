@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0b0f19;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary-glow: #38bdf8;
+  --secondary-glow: #ec4899;
+  --accent-color: #f472b6;
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  
+  --print-bg: #ffffff;
+  --print-text: #000000;
+  --print-border: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 16px;
+  max-width: 650px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.05), transparent 25%);
+  background-attachment: fixed;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 50px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px 10px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 15px rgba(56, 189, 248, 0.2));
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* TOURISM EXPERT FILTERS */
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+  margin-bottom: 10px;
+}
+
+.filters-title {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--primary-glow);
+  color: var(--bg-color);
+  border-color: var(--primary-glow);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+  font-weight: 600;
+}
+
+.filter-btn.free-btn {
+  border-color: var(--secondary-glow);
+  color: var(--secondary-glow);
+}
+
+.filter-btn.free-btn.active {
+  background: var(--secondary-glow);
+  color: white;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+}
+
+.export-btn-container {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.export-btn {
+  background: rgba(11, 15, 25, 0.9);
+  border: 1px solid var(--primary-glow);
+  color: var(--primary-glow);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.export-btn:hover {
+  background: var(--primary-glow);
+  color: var(--bg-color);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 1px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(236, 72, 153, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 
+              0 0 15px rgba(236, 72, 153, 0.1);
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.event-card:hover::before {
+  opacity: 1;
+}
+
+.event-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  gap: 8px;
+}
+
+.event-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.event-classification {
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.priority-tag {
+  display: inline-flex;
+  background: linear-gradient(90deg, rgba(236,72,153,0.2), rgba(236,72,153,0.05));
+  border: 1px solid rgba(236, 72, 153, 0.4);
+  color: var(--accent-color);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.event-description {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.02);
+  margin-bottom: 16px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.detail-icon {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-text {
+  flex: 1;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+/* TOURISM EXPERT GPS BUTTON */
+.gps-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.gps-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: var(--primary-glow);
+  color: var(--primary-glow);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255,255,255,0.02);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--card-border);
+  color: var(--text-muted);
+}
+
+/* =========================================
+   PRINT SPECIFIC STYLES (Light Mode for PDF)
+   ========================================= */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: var(--print-bg) !important;
+    background-image: none !important;
+    color: var(--print-text) !important;
+    padding: 0;
+  }
+  
+  header h1 {
+    background: none !important;
+    color: #1a202c !important;
+    -webkit-text-fill-color: #1a202c !important;
+    filter: none !important;
+  }
+  
+  header p, .event-description, .detail-text {
+    color: #4a5568 !important;
+  }
+  
+  .event-card {
+    background-color: var(--print-bg) !important;
+    box-shadow: none !important;
+    border: 1px solid var(--print-border) !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+    backdrop-filter: none !important;
+  }
+  
+  .event-card::before {
+    display: none !important;
+  }
+  
+  .event-details {
+    background-color: #f7fafc !important;
+    border: 1px solid #edf2f7 !important;
+    margin-bottom: 0;
+  }
+  
+  .event-title, .section-title {
+    color: #2d3748 !important;
+  }
+  
+  .event-classification {
+    background-color: #e2e8f0 !important;
+    color: #4a5568 !important;
+  }
+  
+  .detail-icon {
+    background-color: white !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  
+  .priority-tag {
+    background: #fff5f7 !important;
+    border-color: #fed7e2 !important;
+    color: #d53f8c !important;
+  }
+}
