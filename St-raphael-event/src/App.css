@@ -218,7 +218,13 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -247,8 +253,70 @@ header p {
   border-radius: 10px;
   font-size: 11px;
   font-weight: 600;
-  margin-top: 4px;
   text-transform: uppercase;
+}
+
+/* BASIC INFO (Always visible) */
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+
+.info-icon {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* DEEP DIVE SECTION */
+.deep-dive-btn {
+  background: transparent;
+  border: 1px dashed rgba(56, 189, 248, 0.4);
+  color: var(--primary-glow);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.deep-dive-btn:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-style: solid;
+}
+
+.deep-dive-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.deep-dive-content.expanded {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 16px;
 }
 
 .event-description {
@@ -295,7 +363,6 @@ header p {
   padding-top: 4px;
 }
 
-/* TOURISM EXPERT GPS BUTTON */
 .gps-btn {
   display: flex;
   align-items: center;
@@ -328,6 +395,10 @@ header p {
   color: var(--text-muted);
 }
 
+.print-only-details {
+  display: none;
+}
+
 /* =========================================
    PRINT SPECIFIC STYLES (Light Mode for PDF)
    ========================================= */
@@ -350,7 +421,7 @@ header p {
     filter: none !important;
   }
   
-  header p, .event-description, .detail-text {
+  header p {
     color: #4a5568 !important;
   }
   
@@ -368,12 +439,6 @@ header p {
     display: none !important;
   }
   
-  .event-details {
-    background-color: #f7fafc !important;
-    border: 1px solid #edf2f7 !important;
-    margin-bottom: 0;
-  }
-  
   .event-title, .section-title {
     color: #2d3748 !important;
   }
@@ -383,7 +448,11 @@ header p {
     color: #4a5568 !important;
   }
   
-  .detail-icon {
+  .info-line {
+    color: #2d3748 !important;
+  }
+
+  .info-icon {
     background-color: white !important;
     border: 1px solid #e2e8f0 !important;
   }
@@ -392,5 +461,24 @@ header p {
     background: #fff5f7 !important;
     border-color: #fed7e2 !important;
     color: #d53f8c !important;
+  }
+
+  /* Révéler le texte détaillé pour le PDF sans utiliser l'accordéon interactif */
+  .deep-dive-content {
+    display: none !important;
+  }
+
+  .print-only-details {
+    display: block !important;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #edf2f7;
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.5;
+  }
+
+  .print-only-details p {
+    margin-bottom: 6px;
   }
 }

@@ -14,7 +14,7 @@
       "transport": "Gare SNCF/TGV",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "today"
+    "date": "2026-05-19"
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
       "transport": "Centre-ville piéton",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "today"
+    "date": "2026-05-19"
   },
   {
     "id": 3,
@@ -48,7 +48,7 @@
       "transport": "Agglobus Ligne 3",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "today"
+    "date": "2026-05-19"
   },
   {
     "id": 4,
@@ -65,7 +65,7 @@
       "transport": "Voiture recommandée",
       "pmr": "❌ Non PMR"
     },
-    "dateGroup": "today"
+    "date": "2026-05-20"
   },
   {
     "id": 5,
@@ -82,7 +82,7 @@
       "transport": "Agglobus",
       "pmr": "✅ Accessible au public"
     },
-    "dateGroup": "week1"
+    "date": "2026-05-21"
   },
   {
     "id": 6,
@@ -99,7 +99,7 @@
       "transport": "Centre-ville",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week1"
+    "date": "2026-05-22"
   },
   {
     "id": 7,
@@ -116,7 +116,7 @@
       "transport": "Bus Ligne 7",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week1"
+    "date": "2026-05-23"
   },
   {
     "id": 8,
@@ -133,7 +133,7 @@
       "transport": "Centre-ville",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week1"
+    "date": "2026-05-24"
   },
   {
     "id": 9,
@@ -150,7 +150,7 @@
       "transport": "Gare SNCF/TGV",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week2"
+    "date": "2026-05-28"
   },
   {
     "id": 10,
@@ -167,7 +167,7 @@
       "transport": "Voiture recommandée",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week2"
+    "date": "2026-05-30"
   },
   {
     "id": 11,
@@ -184,7 +184,7 @@
       "transport": "Navette maritime",
       "pmr": "❌ Partiellement accessible"
     },
-    "dateGroup": "week2"
+    "date": "2026-06-05"
   },
   {
     "id": 12,
@@ -201,7 +201,7 @@
       "transport": "Bus et navettes",
       "pmr": "✅ Zones spectateurs PMR"
     },
-    "dateGroup": "week2"
+    "date": "2026-06-07"
   },
   {
     "id": 13,
@@ -218,7 +218,7 @@
       "transport": "Accès routier facilité",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "today"
+    "date": "2026-05-19"
   },
   {
     "id": 14,
@@ -235,7 +235,7 @@
       "transport": "Voiture requise",
       "pmr": "✅ Accessibilité PMR"
     },
-    "dateGroup": "week1"
+    "date": "2026-05-25"
   },
   {
     "id": 15,
@@ -252,7 +252,7 @@
       "transport": "Gare Fréjus à 10 min",
       "pmr": "✅ Zones dédiées PMR"
     },
-    "dateGroup": "week2"
+    "date": "2026-06-12"
   },
   {
     "id": 16,
@@ -269,6 +269,6 @@
       "transport": "Bus Ligne 9",
       "pmr": "✅ Accès libre"
     },
-    "dateGroup": "week2"
+    "date": "2026-06-14"
   }
 ]
