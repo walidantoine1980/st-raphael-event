@@ -8,9 +8,10 @@ const EventCard = ({ event }) => {
   // Générer une URL Google Maps dynamique
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${event.location}, ${event.zipCode} ${event.city}`)}`;
 
-  // Formater la date en français (ex: "12 mai 2026")
+  // Formater la date en français (ex: "Mardi 12 mai 2026")
   const eventDate = new Date(event.date);
-  const formattedDate = eventDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+  const rawDate = eventDate.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const formattedDate = rawDate.charAt(0).toUpperCase() + rawDate.slice(1);
 
   return (
     <div className="event-card">
