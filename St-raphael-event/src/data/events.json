@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "title": "Visite guidée : De la période romaine au village médiéval",
+    "classification": "🖼️ Touristique",
+    "description": "Voyage au cœur de la vieille ville pour découvrir l'histoire passionnante de Saint-Raphaël de l'Antiquité au Moyen-Âge.",
+    "location": "Départ Office de Tourisme",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "10h00 – 12h00",
+    "price": "6€",
+    "access": {
+      "parking": "Parking Bonaparte",
+      "transport": "Gare SNCF/TGV",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "today"
+  },
+  {
+    "id": 2,
+    "title": "Féria : Viva l’Embouligue",
+    "classification": "🎭 Culturel",
+    "description": "Ambiance festive et chaleureuse garantie au Marché République ! Musique, danse et spécialités du sud.",
+    "location": "Marché République",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "18h00 – 23h00",
+    "price": "Gratuit",
+    "access": {
+      "parking": "Parking Coullet",
+      "transport": "Centre-ville piéton",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "today"
+  },
+  {
+    "id": 3,
+    "title": "Concert : Gabriel Pierre Quintet",
+    "classification": "🎶 Musical",
+    "description": "Une superbe soirée de jazz moderne proposée par ce talentueux quintet dans une salle à l'acoustique parfaite.",
+    "location": "Salle Félix Martin",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "20h30",
+    "price": "15€",
+    "access": {
+      "parking": "Parking Kennedy",
+      "transport": "Agglobus Ligne 3",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "today"
+  },
+  {
+    "id": 4,
+    "title": "Atelier découverte de la Ruche",
+    "classification": "🖼️ Touristique",
+    "description": "Découverte du métier d'apiculteur, du fonctionnement d'une ruche et dégustation de produits locaux au mimosa.",
+    "location": "Massif de l'Estérel",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "14h30 – 16h30",
+    "price": "10€",
+    "access": {
+      "parking": "Stationnement sur place",
+      "transport": "Voiture recommandée",
+      "pmr": "❌ Non PMR"
+    },
+    "dateGroup": "today"
+  },
+  {
+    "id": 5,
+    "title": "Initiations aux Joutes Raphaëloises",
+    "classification": "🎭 Culturel",
+    "description": "Découvrez le sport traditionnel des joutes nautiques provençales ! Initiation gratuite et encadrée.",
+    "location": "Port de Santa Lucia",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "14h15 – 16h30",
+    "price": "Gratuit",
+    "access": {
+      "parking": "Parking Santa Lucia",
+      "transport": "Agglobus",
+      "pmr": "✅ Accessible au public"
+    },
+    "dateGroup": "week1"
+  },
+  {
+    "id": 6,
+    "title": "Exposition : Faune préhistorique",
+    "classification": "🎭 Culturel",
+    "description": "Découvrez les incroyables espèces qui peuplaient la région à l'ère préhistorique.",
+    "location": "Musée Archéologique",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "09h00 – 17h00",
+    "price": "Accès libre",
+    "access": {
+      "parking": "Parking de la vieille église",
+      "transport": "Centre-ville",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week1"
+  },
+  {
+    "id": 7,
+    "title": "Handball – Saint-Raphaël vs Montpellier",
+    "classification": "🎭 Événementiel",
+    "description": "Match au sommet pour le championnat de France. Grosse affiche à ne pas manquer !",
+    "location": "Palais des Sports JF Krakowski",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "20h00",
+    "price": "À partir de 12€",
+    "access": {
+      "parking": "Grand parking gratuit",
+      "transport": "Bus Ligne 7",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week1"
+  },
+  {
+    "id": 8,
+    "title": "Théâtre : Les Cocus",
+    "classification": "🎭 Culturel",
+    "description": "Une comédie hilarante qui s'inscrit dans la grande tradition du vaudeville et du boulevard.",
+    "location": "Salle Félix Martin",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "20h30",
+    "price": "22€",
+    "access": {
+      "parking": "Parking Kennedy",
+      "transport": "Centre-ville",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week1"
+  },
+  {
+    "id": 9,
+    "title": "Visite guidée : La Belle Époque",
+    "classification": "🖼️ Touristique",
+    "description": "Plongez dans les années fastes de la Belle Époque, quand Saint-Raphaël devenait une grande station balnéaire.",
+    "location": "Départ Office de Tourisme",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "10h00 – 12h00",
+    "price": "6€",
+    "access": {
+      "parking": "Parking Bonaparte",
+      "transport": "Gare SNCF/TGV",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week2"
+  },
+  {
+    "id": 10,
+    "title": "Festival Rire : Ado un jour, à dos toujours",
+    "classification": "🎭 Culturel",
+    "description": "Spectacle comique en plein air dans le cadre magnifique du domaine du Castellas.",
+    "location": "Domaine du Castellas",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "21h00",
+    "price": "20€",
+    "access": {
+      "parking": "Stationnement sur place",
+      "transport": "Voiture recommandée",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week2"
+  },
+  {
+    "id": 11,
+    "title": "Journée du Tourisme Durable",
+    "classification": "🖼️ Touristique",
+    "description": "Activités écologiques, randonnées encadrées, sorties en kayak de mer pour sensibiliser à la protection du littoral.",
+    "location": "Plage du Débarquement",
+    "city": "Saint-Raphaël",
+    "zipCode": "83700",
+    "time": "09h00 – 18h00",
+    "price": "Gratuit",
+    "access": {
+      "parking": "Parking de la plage",
+      "transport": "Navette maritime",
+      "pmr": "❌ Partiellement accessible"
+    },
+    "dateGroup": "week2"
+  },
+  {
+    "id": 12,
+    "title": "Course 10 km Estérel Côte d’Azur",
+    "classification": "🎭 Événementiel",
+    "description": "Course mythique en bord de mer, départ en soirée à la fraîcheur tombante. Un parcours spectaculaire !",
+    "location": "Bord de mer",
+    "city": "Fréjus",
+    "zipCode": "83600",
+    "time": "19h00",
+    "price": "15€ l'inscription",
+    "access": {
+      "parking": "Base Nature François Léotard",
+      "transport": "Bus et navettes",
+      "pmr": "✅ Zones spectateurs PMR"
+    },
+    "dateGroup": "week2"
+  },
+  {
+    "id": 13,
+    "title": "Luna Park de Fréjus",
+    "classification": "🎢 Divertissement",
+    "description": "La plus grande fête foraine de la Côte d'Azur ! Manèges à sensations, barbes à papa et ambiance nocturne.",
+    "location": "Base Nature",
+    "city": "Fréjus",
+    "zipCode": "83600",
+    "time": "20h00 – 02h00",
+    "price": "Entrée gratuite, manèges payants",
+    "access": {
+      "parking": "Immense parking gratuit",
+      "transport": "Accès routier facilité",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "today"
+  },
+  {
+    "id": 14,
+    "title": "Spectacle musical : Wok'n'Woll",
+    "classification": "🎶 Musical",
+    "description": "Un spectacle musical humoristique et déjanté mêlant musique classique, pop et humour absurde.",
+    "location": "Espace Robert Manuel",
+    "city": "Roquebrune-sur-Argens",
+    "zipCode": "83520",
+    "time": "20h30",
+    "price": "18€",
+    "access": {
+      "parking": "Parking à proximité",
+      "transport": "Voiture requise",
+      "pmr": "✅ Accessibilité PMR"
+    },
+    "dateGroup": "week1"
+  },
+  {
+    "id": 15,
+    "title": "Fréjus Reggae Festival",
+    "classification": "🎶 Musical",
+    "description": "Vibrations jamaïcaines et artistes internationaux pour une soirée inoubliable en plein air.",
+    "location": "Arènes de Fréjus",
+    "city": "Fréjus",
+    "zipCode": "83600",
+    "time": "18h00 – 01h00",
+    "price": "35€",
+    "access": {
+      "parking": "Parking des Arènes",
+      "transport": "Gare Fréjus à 10 min",
+      "pmr": "✅ Zones dédiées PMR"
+    },
+    "dateGroup": "week2"
+  },
+  {
+    "id": 16,
+    "title": "American Day 🇺🇸",
+    "classification": "🎭 Événementiel",
+    "description": "Célébration de la culture américaine : Harley Davidson, country, food trucks et ambiance western.",
+    "location": "Place de la Poste",
+    "city": "Saint-Aygulf (Fréjus)",
+    "zipCode": "83370",
+    "time": "10h00 – 23h00",
+    "price": "Gratuit",
+    "access": {
+      "parking": "Parking du marché",
+      "transport": "Bus Ligne 9",
+      "pmr": "✅ Accès libre"
+    },
+    "dateGroup": "week2"
+  }
+]
