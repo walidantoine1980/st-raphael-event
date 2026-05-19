@@ -1,6 +1,7 @@
 import json
 import time
 import os
+import datetime
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
@@ -64,7 +65,7 @@ def scrape_events():
                         "transport": "Centre-ville",
                         "pmr": "✅ Sous réserve"
                     },
-                    "dateGroup": "week1" # Par défaut
+                    "date": datetime.date.today().isoformat() # Date du jour par défaut
                 })
                 
         except Exception as e:
